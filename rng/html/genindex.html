@@ -1,0 +1,900 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index &#8212; AOCL-RNG 4.2.0 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/rocm_header.css" />
+    <link rel="stylesheet" type="text/css" href="_static/rocm_footer.css" />
+    <link rel="stylesheet" type="text/css" href="_static/fonts.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script async="async" src="https://download.amd.com/js/analytics/analyticsinit.js"></script>
+    <script async="async" src="_static/code_word_breaks.js"></script>
+    <script async="async" src="_static/renameVersionLinks.js"></script>
+    <script async="async" src="_static/rdcMisc.js"></script>
+    <script async="async" src="_static/theme_mode_captions.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
+    <link rel="shortcut icon" href="https://www.amd.com/themes/custom/amd/favicon.ico"/>
+    <link rel="index" title="Index" href="#" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="google-site-verification" content="ZOn0RZC0Pwzlmf2SaE0bRttWk1YzOhuslbpxUDchQ90" />
+
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+
+<header class="common-header" >
+    <nav class="navbar navbar-expand-xl">
+        <div class="container-fluid main-nav rocm-header">
+            
+            <div class="header-logo">
+                <a class="navbar-brand" href="https://www.amd.com/">
+                    <img src="_static/images/amd-header-logo.svg" alt="AMD Logo" title="AMD Logo" width="90" class="d-inline-block align-text-top hover-opacity"/>
+                </a>
+                <div class="vr vr mx-40 my-25"></div>
+                <a class="klavika-font hover-opacity" href="/">AOCL</a>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elements = document.getElementsByClassName('header-all-versions');
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].remove();
+            }
+            elements = document.querySelector("body > footer > div > section > div:nth-child(1) > div > ul").children;
+            var removable_items = ['2020-2024, Advanced Micro Devices, Inc', '2023, Advanced Micro Devices, Inc', 'Statement on Forced Labor', 'Fair and Open Competition', 'UK Tax Strategy', 'Cookie Policy', 'Cookie Settings'];
+            for (var i = 0; i < elements.length; i++) {
+                if (removable_items.includes(elements[i].innerText)) {
+                    elements[i].remove();
+                    i--;
+                }
+            }
+        })
+     </script>
+            </div>
+            <div class="icon-nav text-center d-flex ms-auto">
+                <!-- TODO: Search icon up here maybe? -->
+            </div>
+        </div>
+    </nav>
+    
+</header>
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">AOCL-RNG 4.2.0 documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="rng.html">AOCL RNG</a></li>
+<li class="toctree-l1"><a class="reference internal" href="secrng.html">AOCL SecureRNG</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rngapi.html">AOCL-RNG Library APIs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="secrngapi.html">AOCL-SecureRNG Library APIs</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-angle-right"></span>
+  </label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+
+<h1 id="index">Index</h1>
+
+<div class="genindex-jumpbox">
+ <a href="#D"><strong>D</strong></a>
+ | <a href="#G"><strong>G</strong></a>
+ | <a href="#I"><strong>I</strong></a>
+ | <a href="#R"><strong>R</strong></a>
+ | <a href="#S"><strong>S</strong></a>
+ 
+</div>
+<h2 id="D">D</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="rngapi.html#_CPPv49DRANDBETAP9rng_int_tPdPdP9rng_int_tPdP9rng_int_t">DRANDBETA (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv49drandbeta9rng_int_tddP9rng_int_tPdP9rng_int_t">drandbeta (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv410drandbeta_P9rng_int_tPdPdP9rng_int_tPdP9rng_int_t">drandbeta_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv413DRANDBINOMIALP9rng_int_tP9rng_int_tPdP9rng_int_tP9rng_int_tP9rng_int_t">DRANDBINOMIAL (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv413drandbinomial9rng_int_t9rng_int_tdP9rng_int_tP9rng_int_tP9rng_int_t">drandbinomial (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414drandbinomial_P9rng_int_tP9rng_int_tPdP9rng_int_tP9rng_int_tP9rng_int_t">drandbinomial_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv422DRANDBINOMIALREFERENCEP9rng_int_tPdPdP9rng_int_tP9rng_int_t">DRANDBINOMIALREFERENCE (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv422drandbinomialreference9rng_int_tdPdP9rng_int_tP9rng_int_t">drandbinomialreference (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv423drandbinomialreference_P9rng_int_tPdPdP9rng_int_tP9rng_int_t">drandbinomialreference_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv417DRANDBLUMBLUMSHUBP9rng_int_tP9rng_int_tPdP9rng_int_t">DRANDBLUMBLUMSHUB (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv417drandblumblumshub9rng_int_tP9rng_int_tPdP9rng_int_t">drandblumblumshub (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv418drandblumblumshub_P9rng_int_tP9rng_int_tPdP9rng_int_t">drandblumblumshub_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv411DRANDCAUCHYP9rng_int_tPdPdP9rng_int_tPdP9rng_int_t">DRANDCAUCHY (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv411drandcauchy9rng_int_tddP9rng_int_tPdP9rng_int_t">drandcauchy (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv412drandcauchy_P9rng_int_tPdPdP9rng_int_tPdP9rng_int_t">drandcauchy_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv415DRANDCHISQUAREDP9rng_int_tP9rng_int_tP9rng_int_tPdP9rng_int_t">DRANDCHISQUARED (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv415drandchisquared9rng_int_t9rng_int_tP9rng_int_tPdP9rng_int_t">drandchisquared (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv416drandchisquared_P9rng_int_tP9rng_int_tP9rng_int_tPdP9rng_int_t">drandchisquared_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv420DRANDDISCRETEUNIFORMP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">DRANDDISCRETEUNIFORM (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv420dranddiscreteuniform9rng_int_t9rng_int_t9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">dranddiscreteuniform (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv421dranddiscreteuniform_P9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">dranddiscreteuniform_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv416DRANDEXPONENTIALP9rng_int_tPdP9rng_int_tPdP9rng_int_t">DRANDEXPONENTIAL (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv416drandexponential9rng_int_tdP9rng_int_tPdP9rng_int_t">drandexponential (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv417drandexponential_P9rng_int_tPdP9rng_int_tPdP9rng_int_t">drandexponential_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv46DRANDFP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tPdP9rng_int_t">DRANDF (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv46drandf9rng_int_t9rng_int_t9rng_int_tP9rng_int_tPdP9rng_int_t">drandf (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv47drandf_P9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tPdP9rng_int_t">drandf_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv410DRANDGAMMAP9rng_int_tPdPdP9rng_int_tPdP9rng_int_t">DRANDGAMMA (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv410drandgamma9rng_int_tddP9rng_int_tPdP9rng_int_t">drandgamma (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv411drandgamma_P9rng_int_tPdPdP9rng_int_tPdP9rng_int_t">drandgamma_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv413DRANDGAUSSIANP9rng_int_tPdPdP9rng_int_tPdP9rng_int_t">DRANDGAUSSIAN (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv413drandgaussian9rng_int_tddP9rng_int_tPdP9rng_int_t">drandgaussian (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414drandgaussian_P9rng_int_tPdPdP9rng_int_tPdP9rng_int_t">drandgaussian_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv420DRANDGENERALDISCRETEP9rng_int_tPdP9rng_int_tP9rng_int_tP9rng_int_t">DRANDGENERALDISCRETE (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv420drandgeneraldiscrete9rng_int_tPdP9rng_int_tP9rng_int_tP9rng_int_t">drandgeneraldiscrete (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv421drandgeneraldiscrete_P9rng_int_tPdP9rng_int_tP9rng_int_tP9rng_int_t">drandgeneraldiscrete_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414DRANDGEOMETRICP9rng_int_tPdP9rng_int_tP9rng_int_tP9rng_int_t">DRANDGEOMETRIC (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414drandgeometric9rng_int_tdP9rng_int_tP9rng_int_tP9rng_int_t">drandgeometric (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv415drandgeometric_P9rng_int_tPdP9rng_int_tP9rng_int_tP9rng_int_t">drandgeometric_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv423DRANDGEOMETRICREFERENCEPdPdP9rng_int_tP9rng_int_t">DRANDGEOMETRICREFERENCE (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv423drandgeometricreferencedPdP9rng_int_tP9rng_int_t">drandgeometricreference (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv424drandgeometricreference_PdPdP9rng_int_tP9rng_int_t">drandgeometricreference_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv419DRANDHYPERGEOMETRICP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">DRANDHYPERGEOMETRIC (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv419drandhypergeometric9rng_int_t9rng_int_t9rng_int_t9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">drandhypergeometric (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv420drandhypergeometric_P9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">drandhypergeometric_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv428DRANDHYPERGEOMETRICREFERENCEP9rng_int_tP9rng_int_tP9rng_int_tPdP9rng_int_tP9rng_int_t">DRANDHYPERGEOMETRICREFERENCE (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv428drandhypergeometricreference9rng_int_t9rng_int_t9rng_int_tPdP9rng_int_tP9rng_int_t">drandhypergeometricreference (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv429drandhypergeometricreference_P9rng_int_tP9rng_int_tP9rng_int_tPdP9rng_int_tP9rng_int_t">drandhypergeometricreference_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv415DRANDINITIALIZEP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">DRANDINITIALIZE (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv415drandinitialize9rng_int_t9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">drandinitialize (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv416drandinitialize_P9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">drandinitialize_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv422drandinitialize_secrng9rng_int_t9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">drandinitialize_secrng (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv418DRANDINITIALIZEBBSP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">DRANDINITIALIZEBBS (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv418drandinitializebbs9rng_int_t9rng_int_tP9rng_int_t9rng_int_tP9rng_int_t9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">drandinitializebbs (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv419drandinitializebbs_P9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">drandinitializebbs_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv419DRANDINITIALIZEUSER28RNG_DRANDINITIALIZEUSER_UINI28RNG_DRANDINITIALIZEUSER_UGEN9rng_int_t9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">DRANDINITIALIZEUSER (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv419drandinitializeuser28RNG_DRANDINITIALIZEUSER_UINI28RNG_DRANDINITIALIZEUSER_UGEN9rng_int_t9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">drandinitializeuser (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv420drandinitializeuser_28RNG_DRANDINITIALIZEUSER_UINI28RNG_DRANDINITIALIZEUSER_UGEN9rng_int_t9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">drandinitializeuser_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv413DRANDLEAPFROGP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">DRANDLEAPFROG (C++ function)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="rngapi.html#_CPPv413drandleapfrog9rng_int_t9rng_int_tP9rng_int_tP9rng_int_t">drandleapfrog (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414drandleapfrog_P9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">drandleapfrog_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv413DRANDLOGISTICP9rng_int_tPdPdP9rng_int_tPdP9rng_int_t">DRANDLOGISTIC (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv413drandlogistic9rng_int_tddP9rng_int_tPdP9rng_int_t">drandlogistic (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414drandlogistic_P9rng_int_tPdPdP9rng_int_tPdP9rng_int_t">drandlogistic_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414DRANDLOGNORMALP9rng_int_tPdPdP9rng_int_tPdP9rng_int_t">DRANDLOGNORMAL (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414drandlognormal9rng_int_tddP9rng_int_tPdP9rng_int_t">drandlognormal (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv415drandlognormal_P9rng_int_tPdPdP9rng_int_tPdP9rng_int_t">drandlognormal_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv416DRANDMULTINOMIALP9rng_int_tP9rng_int_tPdP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">DRANDMULTINOMIAL (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv416drandmultinomial9rng_int_t9rng_int_tPd9rng_int_tP9rng_int_tP9rng_int_t9rng_int_tP9rng_int_t">drandmultinomial (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv417drandmultinomial_P9rng_int_tP9rng_int_tPdP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">drandmultinomial_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv416DRANDMULTINORMALP9rng_int_tP9rng_int_tPdPdP9rng_int_tP9rng_int_tPdP9rng_int_tP9rng_int_t">DRANDMULTINORMAL (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv416drandmultinormal9rng_int_t9rng_int_tPdPd9rng_int_tP9rng_int_tPd9rng_int_tP9rng_int_t">drandmultinormal (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv417drandmultinormal_P9rng_int_tP9rng_int_tPdPdP9rng_int_tP9rng_int_tPdP9rng_int_tP9rng_int_t">drandmultinormal_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv417DRANDMULTINORMALRP9rng_int_tPdP9rng_int_tPdP9rng_int_tP9rng_int_t">DRANDMULTINORMALR (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv417drandmultinormalr9rng_int_tPdP9rng_int_tPd9rng_int_tP9rng_int_t">drandmultinormalr (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv418drandmultinormalr_P9rng_int_tPdP9rng_int_tPdP9rng_int_tP9rng_int_t">drandmultinormalr_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv425DRANDMULTINORMALREFERENCEP9rng_int_tPdPdP9rng_int_tPdP9rng_int_tP9rng_int_t">DRANDMULTINORMALREFERENCE (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv425drandmultinormalreference9rng_int_tPdPd9rng_int_tPdP9rng_int_tP9rng_int_t">drandmultinormalreference (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv426drandmultinormalreference_P9rng_int_tPdPdP9rng_int_tPdP9rng_int_tP9rng_int_t">drandmultinormalreference_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv419DRANDMULTISTUDENTSTP9rng_int_tP9rng_int_tP9rng_int_tPdPdP9rng_int_tP9rng_int_tPdP9rng_int_tP9rng_int_t">DRANDMULTISTUDENTST (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv419drandmultistudentst9rng_int_t9rng_int_t9rng_int_tPdPd9rng_int_tP9rng_int_tPd9rng_int_tP9rng_int_t">drandmultistudentst (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv420drandmultistudentst_P9rng_int_tP9rng_int_tP9rng_int_tPdPdP9rng_int_tP9rng_int_tPdP9rng_int_tP9rng_int_t">drandmultistudentst_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv420DRANDMULTISTUDENTSTRP9rng_int_tPdP9rng_int_tPdP9rng_int_tP9rng_int_t">DRANDMULTISTUDENTSTR (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv420drandmultistudentstr9rng_int_tPdP9rng_int_tPd9rng_int_tP9rng_int_t">drandmultistudentstr (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv421drandmultistudentstr_P9rng_int_tPdP9rng_int_tPdP9rng_int_tP9rng_int_t">drandmultistudentstr_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv428DRANDMULTISTUDENTSTREFERENCEP9rng_int_tP9rng_int_tPdPdP9rng_int_tPdP9rng_int_tP9rng_int_t">DRANDMULTISTUDENTSTREFERENCE (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv428drandmultistudentstreference9rng_int_t9rng_int_tPdPd9rng_int_tPdP9rng_int_tP9rng_int_t">drandmultistudentstreference (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv429drandmultistudentstreference_P9rng_int_tP9rng_int_tPdPdP9rng_int_tPdP9rng_int_tP9rng_int_t">drandmultistudentstreference_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv421DRANDNEGATIVEBINOMIALP9rng_int_tP9rng_int_tPdP9rng_int_tP9rng_int_tP9rng_int_t">DRANDNEGATIVEBINOMIAL (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv421drandnegativebinomial9rng_int_t9rng_int_tdP9rng_int_tP9rng_int_tP9rng_int_t">drandnegativebinomial (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv422drandnegativebinomial_P9rng_int_tP9rng_int_tPdP9rng_int_tP9rng_int_tP9rng_int_t">drandnegativebinomial_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv430DRANDNEGATIVEBINOMIALREFERENCEP9rng_int_tPdPdP9rng_int_tP9rng_int_t">DRANDNEGATIVEBINOMIALREFERENCE (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv430drandnegativebinomialreference9rng_int_tdPdP9rng_int_tP9rng_int_t">drandnegativebinomialreference (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv431drandnegativebinomialreference_P9rng_int_tdPdP9rng_int_tP9rng_int_t">drandnegativebinomialreference_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv412DRANDPOISSONP9rng_int_tPdP9rng_int_tP9rng_int_tP9rng_int_t">DRANDPOISSON (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv412drandpoisson9rng_int_tdP9rng_int_tP9rng_int_tP9rng_int_t">drandpoisson (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv413drandpoisson_P9rng_int_tPdP9rng_int_tP9rng_int_tP9rng_int_t">drandpoisson_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv421DRANDPOISSONREFERENCEPdPdP9rng_int_tP9rng_int_t">DRANDPOISSONREFERENCE (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv421drandpoissonreferencedPdP9rng_int_tP9rng_int_t">drandpoissonreference (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv422drandpoissonreference_PdPdP9rng_int_tP9rng_int_t">drandpoissonreference_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414DRANDSKIPAHEADP9rng_int_tP9rng_int_tP9rng_int_t">DRANDSKIPAHEAD (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414drandskipahead9rng_int_tP9rng_int_tP9rng_int_t">drandskipahead (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv415drandskipahead_P9rng_int_tP9rng_int_tP9rng_int_t">drandskipahead_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414DRANDSTUDENTSTP9rng_int_tP9rng_int_tP9rng_int_tPdP9rng_int_t">DRANDSTUDENTST (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414drandstudentst9rng_int_t9rng_int_tP9rng_int_tPdP9rng_int_t">drandstudentst (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv415drandstudentst_P9rng_int_tP9rng_int_tP9rng_int_tPdP9rng_int_t">drandstudentst_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv415DRANDTRIANGULARP9rng_int_tPdPdPdP9rng_int_tPdP9rng_int_t">DRANDTRIANGULAR (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv415drandtriangular9rng_int_tdddP9rng_int_tPdP9rng_int_t">drandtriangular (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv416drandtriangular_P9rng_int_tPdPdPdP9rng_int_tPdP9rng_int_t">drandtriangular_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv412DRANDUNIFORMP9rng_int_tPdPdP9rng_int_tPdP9rng_int_t">DRANDUNIFORM (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv412dranduniform9rng_int_tddP9rng_int_tPdP9rng_int_t">dranduniform (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv413dranduniform_P9rng_int_tPdPdP9rng_int_tPdP9rng_int_t">dranduniform_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv413DRANDVONMISESP9rng_int_tPdP9rng_int_tPdP9rng_int_t">DRANDVONMISES (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv413drandvonmises9rng_int_tdP9rng_int_tPdP9rng_int_t">drandvonmises (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414drandvonmises_P9rng_int_tPdP9rng_int_tPdP9rng_int_t">drandvonmises_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv412DRANDWEIBULLP9rng_int_tPdPdP9rng_int_tPdP9rng_int_t">DRANDWEIBULL (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv412drandweibull9rng_int_tddP9rng_int_tPdP9rng_int_t">drandweibull (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv413drandweibull_P9rng_int_tPdPdP9rng_int_tPdP9rng_int_t">drandweibull_ (C++ function)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="G">G</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="secrngapi.html#_CPPv413get_rdrand16uP8uint16_tj">get_rdrand16u (C++ function)</a>
+</li>
+      <li><a href="secrngapi.html#_CPPv413get_rdrand32uP8uint32_tj">get_rdrand32u (C++ function)</a>
+</li>
+      <li><a href="secrngapi.html#_CPPv417get_rdrand32u_arrP8uint32_tjj">get_rdrand32u_arr (C++ function)</a>
+</li>
+      <li><a href="secrngapi.html#_CPPv413get_rdrand64uP8uint64_tj">get_rdrand64u (C++ function)</a>
+</li>
+      <li><a href="secrngapi.html#_CPPv417get_rdrand64u_arrP8uint64_tjj">get_rdrand64u_arr (C++ function)</a>
+</li>
+      <li><a href="secrngapi.html#_CPPv420get_rdrand_bytes_arrPhjj">get_rdrand_bytes_arr (C++ function)</a>
+</li>
+      <li><a href="secrngapi.html#_CPPv413get_rdseed16uP8uint16_tj">get_rdseed16u (C++ function)</a>
+</li>
+      <li><a href="secrngapi.html#_CPPv413get_rdseed32uP8uint32_tj">get_rdseed32u (C++ function)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="secrngapi.html#_CPPv417get_rdseed32u_arrP8uint32_tjj">get_rdseed32u_arr (C++ function)</a>
+</li>
+      <li><a href="secrngapi.html#_CPPv413get_rdseed64uP8uint64_tj">get_rdseed64u (C++ function)</a>
+</li>
+      <li><a href="secrngapi.html#_CPPv417get_rdseed64u_arrP8uint64_tjj">get_rdseed64u_arr (C++ function)</a>
+</li>
+      <li><a href="secrngapi.html#_CPPv420get_rdseed_bytes_arrPhjj">get_rdseed_bytes_arr (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414GET_RNGVERSIONv">GET_RNGVERSION (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414get_rngversionv">get_rngversion (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv415get_rngversion_v">get_rngversion_ (C++ function)</a>
+</li>
+      <li><a href="secrngapi.html#_CPPv417get_secrngversionv">get_secrngversion (C++ function)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="I">I</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="secrngapi.html#_CPPv419is_RDRAND_supportedv">is_RDRAND_supported (C++ function)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="secrngapi.html#_CPPv419is_RDSEED_supportedv">is_RDSEED_supported (C++ function)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="R">R</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="rngapi.html#_CPPv428RNG_DRANDINITIALIZEUSER_UGEN">RNG_DRANDINITIALIZEUSER_UGEN (C++ type)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="rngapi.html#_CPPv428RNG_DRANDINITIALIZEUSER_UINI">RNG_DRANDINITIALIZEUSER_UINI (C++ type)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="S">S</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="rngapi.html#_CPPv49SRANDBETAP9rng_int_tPfPfP9rng_int_tPfP9rng_int_t">SRANDBETA (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv49srandbeta9rng_int_tffP9rng_int_tPfP9rng_int_t">srandbeta (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv410srandbeta_P9rng_int_tPfPfP9rng_int_tPfP9rng_int_t">srandbeta_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv413SRANDBINOMIALP9rng_int_tP9rng_int_tPfP9rng_int_tP9rng_int_tP9rng_int_t">SRANDBINOMIAL (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv413srandbinomial9rng_int_t9rng_int_tfP9rng_int_tP9rng_int_tP9rng_int_t">srandbinomial (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414srandbinomial_P9rng_int_tP9rng_int_tPfP9rng_int_tP9rng_int_tP9rng_int_t">srandbinomial_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv422SRANDBINOMIALREFERENCEP9rng_int_tPfPfP9rng_int_tP9rng_int_t">SRANDBINOMIALREFERENCE (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv422srandbinomialreference9rng_int_tfPfP9rng_int_tP9rng_int_t">srandbinomialreference (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv423srandbinomialreference_P9rng_int_tPfPfP9rng_int_tP9rng_int_t">srandbinomialreference_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv417SRANDBLUMBLUMSHUBP9rng_int_tP9rng_int_tPfP9rng_int_t">SRANDBLUMBLUMSHUB (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv417srandblumblumshub9rng_int_tP9rng_int_tPfP9rng_int_t">srandblumblumshub (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv418srandblumblumshub_P9rng_int_tP9rng_int_tPfP9rng_int_t">srandblumblumshub_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv411SRANDCAUCHYP9rng_int_tPfPfP9rng_int_tPfP9rng_int_t">SRANDCAUCHY (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv411srandcauchy9rng_int_tffP9rng_int_tPfP9rng_int_t">srandcauchy (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv412srandcauchy_P9rng_int_tPfPfP9rng_int_tPfP9rng_int_t">srandcauchy_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv415SRANDCHISQUAREDP9rng_int_tP9rng_int_tP9rng_int_tPfP9rng_int_t">SRANDCHISQUARED (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv415srandchisquared9rng_int_t9rng_int_tP9rng_int_tPfP9rng_int_t">srandchisquared (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv416srandchisquared_P9rng_int_tP9rng_int_tP9rng_int_tPfP9rng_int_t">srandchisquared_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv420SRANDDISCRETEUNIFORMP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">SRANDDISCRETEUNIFORM (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv420sranddiscreteuniform9rng_int_t9rng_int_t9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">sranddiscreteuniform (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv421sranddiscreteuniform_P9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">sranddiscreteuniform_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv416SRANDEXPONENTIALP9rng_int_tPfP9rng_int_tPfP9rng_int_t">SRANDEXPONENTIAL (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv416srandexponential9rng_int_tfP9rng_int_tPfP9rng_int_t">srandexponential (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv417srandexponential_P9rng_int_tPfP9rng_int_tPfP9rng_int_t">srandexponential_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv46SRANDFP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tPfP9rng_int_t">SRANDF (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv46srandf9rng_int_t9rng_int_t9rng_int_tP9rng_int_tPfP9rng_int_t">srandf (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv47srandf_P9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tPfP9rng_int_t">srandf_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv410SRANDGAMMAP9rng_int_tPfPfP9rng_int_tPfP9rng_int_t">SRANDGAMMA (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv410srandgamma9rng_int_tffP9rng_int_tPfP9rng_int_t">srandgamma (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv411srandgamma_P9rng_int_tPfPfP9rng_int_tPfP9rng_int_t">srandgamma_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv413SRANDGAUSSIANP9rng_int_tPfPfP9rng_int_tPfP9rng_int_t">SRANDGAUSSIAN (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv413srandgaussian9rng_int_tffP9rng_int_tPfP9rng_int_t">srandgaussian (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414srandgaussian_P9rng_int_tPfPfP9rng_int_tPfP9rng_int_t">srandgaussian_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv420SRANDGENERALDISCRETEP9rng_int_tPfP9rng_int_tP9rng_int_tP9rng_int_t">SRANDGENERALDISCRETE (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv420srandgeneraldiscrete9rng_int_tPfP9rng_int_tP9rng_int_tP9rng_int_t">srandgeneraldiscrete (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv421srandgeneraldiscrete_P9rng_int_tPfP9rng_int_tP9rng_int_tP9rng_int_t">srandgeneraldiscrete_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414SRANDGEOMETRICP9rng_int_tPfP9rng_int_tP9rng_int_tP9rng_int_t">SRANDGEOMETRIC (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414srandgeometric9rng_int_tfP9rng_int_tP9rng_int_tP9rng_int_t">srandgeometric (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv415srandgeometric_P9rng_int_tPfP9rng_int_tP9rng_int_tP9rng_int_t">srandgeometric_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv423SRANDGEOMETRICREFERENCEPfPfP9rng_int_tP9rng_int_t">SRANDGEOMETRICREFERENCE (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv423srandgeometricreferencefPfP9rng_int_tP9rng_int_t">srandgeometricreference (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv424srandgeometricreference_PfPfP9rng_int_tP9rng_int_t">srandgeometricreference_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv419SRANDHYPERGEOMETRICP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">SRANDHYPERGEOMETRIC (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv419srandhypergeometric9rng_int_t9rng_int_t9rng_int_t9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">srandhypergeometric (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv420srandhypergeometric_P9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">srandhypergeometric_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv428SRANDHYPERGEOMETRICREFERENCEP9rng_int_tP9rng_int_tP9rng_int_tPfP9rng_int_tP9rng_int_t">SRANDHYPERGEOMETRICREFERENCE (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv428srandhypergeometricreference9rng_int_t9rng_int_t9rng_int_tPfP9rng_int_tP9rng_int_t">srandhypergeometricreference (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv429srandhypergeometricreference_P9rng_int_tP9rng_int_tP9rng_int_tPfP9rng_int_tP9rng_int_t">srandhypergeometricreference_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv415SRANDINITIALIZEP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">SRANDINITIALIZE (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv415srandinitialize9rng_int_t9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">srandinitialize (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv416srandinitialize_P9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">srandinitialize_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv418SRANDINITIALIZEBBSP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">SRANDINITIALIZEBBS (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv418srandinitializebbs9rng_int_t9rng_int_tP9rng_int_t9rng_int_tP9rng_int_t9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">srandinitializebbs (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv419srandinitializebbs_P9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">srandinitializebbs_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv419SRANDINITIALIZEUSER28RNG_SRANDINITIALIZEUSER_UINI28RNG_SRANDINITIALIZEUSER_UGEN9rng_int_t9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">SRANDINITIALIZEUSER (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv419srandinitializeuser28RNG_SRANDINITIALIZEUSER_UINI28RNG_SRANDINITIALIZEUSER_UGEN9rng_int_t9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">srandinitializeuser (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv420srandinitializeuser_28RNG_SRANDINITIALIZEUSER_UINI28RNG_SRANDINITIALIZEUSER_UGEN9rng_int_t9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">srandinitializeuser_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv413SRANDLEAPFROGP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">SRANDLEAPFROG (C++ function)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="rngapi.html#_CPPv413srandleapfrog9rng_int_t9rng_int_tP9rng_int_tP9rng_int_t">srandleapfrog (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414srandleapfrog_P9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">srandleapfrog_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv413SRANDLOGISTICP9rng_int_tPfPfP9rng_int_tPfP9rng_int_t">SRANDLOGISTIC (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv413srandlogistic9rng_int_tffP9rng_int_tPfP9rng_int_t">srandlogistic (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414srandlogistic_P9rng_int_tPfPfP9rng_int_tPfP9rng_int_t">srandlogistic_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414SRANDLOGNORMALP9rng_int_tPfPfP9rng_int_tPfP9rng_int_t">SRANDLOGNORMAL (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414srandlognormal9rng_int_tffP9rng_int_tPfP9rng_int_t">srandlognormal (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv415srandlognormal_P9rng_int_tPfPfP9rng_int_tPfP9rng_int_t">srandlognormal_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv416SRANDMULTINOMIALP9rng_int_tP9rng_int_tPfP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">SRANDMULTINOMIAL (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv416srandmultinomial9rng_int_t9rng_int_tPf9rng_int_tP9rng_int_tP9rng_int_t9rng_int_tP9rng_int_t">srandmultinomial (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv417srandmultinomial_P9rng_int_tP9rng_int_tPfP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_tP9rng_int_t">srandmultinomial_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv416SRANDMULTINORMALP9rng_int_tP9rng_int_tPfPfP9rng_int_tP9rng_int_tPfP9rng_int_tP9rng_int_t">SRANDMULTINORMAL (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv416srandmultinormal9rng_int_t9rng_int_tPfPf9rng_int_tP9rng_int_tPf9rng_int_tP9rng_int_t">srandmultinormal (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv417srandmultinormal_P9rng_int_tP9rng_int_tPfPfP9rng_int_tP9rng_int_tPfP9rng_int_tP9rng_int_t">srandmultinormal_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv417SRANDMULTINORMALRP9rng_int_tPfP9rng_int_tPfP9rng_int_tP9rng_int_t">SRANDMULTINORMALR (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv417srandmultinormalr9rng_int_tPfP9rng_int_tPf9rng_int_tP9rng_int_t">srandmultinormalr (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv418srandmultinormalr_P9rng_int_tPfP9rng_int_tPfP9rng_int_tP9rng_int_t">srandmultinormalr_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv425SRANDMULTINORMALREFERENCEP9rng_int_tPfPfP9rng_int_tPfP9rng_int_tP9rng_int_t">SRANDMULTINORMALREFERENCE (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv425srandmultinormalreference9rng_int_tPfPf9rng_int_tPfP9rng_int_tP9rng_int_t">srandmultinormalreference (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv426srandmultinormalreference_P9rng_int_tPfPfP9rng_int_tPfP9rng_int_tP9rng_int_t">srandmultinormalreference_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv419SRANDMULTISTUDENTSTP9rng_int_tP9rng_int_tP9rng_int_tPfPfP9rng_int_tP9rng_int_tPfP9rng_int_tP9rng_int_t">SRANDMULTISTUDENTST (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv419srandmultistudentst9rng_int_t9rng_int_t9rng_int_tPfPf9rng_int_tP9rng_int_tPf9rng_int_tP9rng_int_t">srandmultistudentst (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv420srandmultistudentst_P9rng_int_tP9rng_int_tP9rng_int_tPfPfP9rng_int_tP9rng_int_tPfP9rng_int_tP9rng_int_t">srandmultistudentst_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv420SRANDMULTISTUDENTSTRP9rng_int_tPfP9rng_int_tPfP9rng_int_tP9rng_int_t">SRANDMULTISTUDENTSTR (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv420srandmultistudentstr9rng_int_tPfP9rng_int_tPf9rng_int_tP9rng_int_t">srandmultistudentstr (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv421srandmultistudentstr_P9rng_int_tPfP9rng_int_tPfP9rng_int_tP9rng_int_t">srandmultistudentstr_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv428SRANDMULTISTUDENTSTREFERENCEP9rng_int_tP9rng_int_tPfPfP9rng_int_tPfP9rng_int_tP9rng_int_t">SRANDMULTISTUDENTSTREFERENCE (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv428srandmultistudentstreference9rng_int_t9rng_int_tPfPf9rng_int_tPfP9rng_int_tP9rng_int_t">srandmultistudentstreference (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv429srandmultistudentstreference_P9rng_int_tP9rng_int_tPfPfP9rng_int_tPfP9rng_int_tP9rng_int_t">srandmultistudentstreference_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv421SRANDNEGATIVEBINOMIALP9rng_int_tP9rng_int_tPfP9rng_int_tP9rng_int_tP9rng_int_t">SRANDNEGATIVEBINOMIAL (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv421srandnegativebinomial9rng_int_t9rng_int_tfP9rng_int_tP9rng_int_tP9rng_int_t">srandnegativebinomial (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv422srandnegativebinomial_P9rng_int_tP9rng_int_tPfP9rng_int_tP9rng_int_tP9rng_int_t">srandnegativebinomial_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv430SRANDNEGATIVEBINOMIALREFERENCEP9rng_int_tPfPfP9rng_int_tP9rng_int_t">SRANDNEGATIVEBINOMIALREFERENCE (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv430srandnegativebinomialreference9rng_int_tfPfP9rng_int_tP9rng_int_t">srandnegativebinomialreference (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv431srandnegativebinomialreference_P9rng_int_tPfPfP9rng_int_tP9rng_int_t">srandnegativebinomialreference_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv412SRANDPOISSONP9rng_int_tPfP9rng_int_tP9rng_int_tP9rng_int_t">SRANDPOISSON (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv412srandpoisson9rng_int_tfP9rng_int_tP9rng_int_tP9rng_int_t">srandpoisson (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv413srandpoisson_P9rng_int_tPfP9rng_int_tP9rng_int_tP9rng_int_t">srandpoisson_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv421SRANDPOISSONREFERENCEPfPfP9rng_int_tP9rng_int_t">SRANDPOISSONREFERENCE (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv421srandpoissonreferencefPfP9rng_int_tP9rng_int_t">srandpoissonreference (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv422srandpoissonreference_PfPfP9rng_int_tP9rng_int_t">srandpoissonreference_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414SRANDSKIPAHEADP9rng_int_tP9rng_int_tP9rng_int_t">SRANDSKIPAHEAD (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414srandskipahead9rng_int_tP9rng_int_tP9rng_int_t">srandskipahead (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv415srandskipahead_P9rng_int_tP9rng_int_tP9rng_int_t">srandskipahead_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414SRANDSTUDENTSTP9rng_int_tP9rng_int_tP9rng_int_tPfP9rng_int_t">SRANDSTUDENTST (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414srandstudentst9rng_int_t9rng_int_tP9rng_int_tPfP9rng_int_t">srandstudentst (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv415srandstudentst_P9rng_int_tP9rng_int_tP9rng_int_tPfP9rng_int_t">srandstudentst_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv415SRANDTRIANGULARP9rng_int_tPfPfPfP9rng_int_tPfP9rng_int_t">SRANDTRIANGULAR (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv415srandtriangular9rng_int_tfffP9rng_int_tPfP9rng_int_t">srandtriangular (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv416srandtriangular_P9rng_int_tPfPfPfP9rng_int_tPfP9rng_int_t">srandtriangular_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv412SRANDUNIFORMP9rng_int_tPfPfP9rng_int_tPfP9rng_int_t">SRANDUNIFORM (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv412sranduniform9rng_int_tffP9rng_int_tPfP9rng_int_t">sranduniform (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv413sranduniform_P9rng_int_tPfPfP9rng_int_tPfP9rng_int_t">sranduniform_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv413SRANDVONMISESP9rng_int_tPfP9rng_int_tPfP9rng_int_t">SRANDVONMISES (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv413srandvonmises9rng_int_tfP9rng_int_tPfP9rng_int_t">srandvonmises (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv414srandvonmises_P9rng_int_tPfP9rng_int_tPfP9rng_int_t">srandvonmises_ (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv412SRANDWEIBULLP9rng_int_tPfPfP9rng_int_tPfP9rng_int_t">SRANDWEIBULL (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv412srandweibull9rng_int_tffP9rng_int_tPfP9rng_int_t">srandweibull (C++ function)</a>
+</li>
+      <li><a href="rngapi.html#_CPPv413srandweibull_P9rng_int_tPfPfP9rng_int_tPfP9rng_int_t">srandweibull_ (C++ function)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <p>
+  </p>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+
+<footer class="rocm-footer">
+    <div class="container-lg">
+        <section class="bottom-menu menu py-45">
+            <div class="row d-flex align-items-center">
+                <div class="col-12 text-center">
+                    <ul>
+                        <li><a href="https://www.amd.com/en/corporate/copyright" target="_blank">Terms and Conditions</a></li>
+                        
+                        <li><a href="">2023, Advanced Micro Devices, Inc</a></li>
+                        <li><a href="https://www.amd.com/en/corporate/privacy" target="_blank">Privacy</a></li>
+                        <li><a href="https://www.amd.com/en/corporate/trademarks" target="_blank">Trademarks</a></li>
+                        <li><a href="https://www.amd.com/system/files/documents/statement-human-trafficking-forced-labor.pdf" target="_blank">Statement on Forced Labor</a></li>
+                        <li><a href="https://www.amd.com/en/corporate/competition" target="_blank">Fair and Open Competition</a></li>
+                        <li><a href="https://www.amd.com/system/files/documents/amd-uk-tax-strategy.pdf" target="_blank">UK Tax Strategy</a></li>
+                        <li><a href="https://www.amd.com/en/corporate/cookies" target="_blank">Cookie Policy</a></li>
+                        <!-- OneTrust Cookies Settings button start -->
+                        <li><a href="#cookie-settings" id="ot-sdk-btn" class="ot-sdk-show-settings">Cookie Settings</a></li>
+                        <!-- OneTrust Cookies Settings button end -->
+                    </ul>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-12 text-center">
+                    <div>
+                        <span class="copyright">© 2023 Advanced Micro Devices, Inc</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</footer>
+
+<!-- <div id="rdc-watermark-container">
+    <img id="rdc-watermark" src="_static/images/alpha-watermark.svg" alt="DRAFT watermark"/>
+</div> -->
+  </body>
+</html>
