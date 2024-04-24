@@ -5,7 +5,7 @@
  </tr>
 </table>
 
-# [AOCL-RNG Library Documentation](https://potential-guide-rrq1z2v.pages.github.io/)
+# [AOCL-RNG Library Documentation](https://amd.github.io/aocl-rng/)
 
 <hr class="sphinxhide"></hr>
 
