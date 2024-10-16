@@ -5,7 +5,10 @@
  </tr>
 </table>
 
-# [AOCL-RNG Library Documentation](https://amd.github.io/aocl-rng/)
+# [AOCL-RNG 4.2 Library Documentation](https://amd.github.io/aocl-rng/)
+The AOCL-RNG API documentation provided above is for an older release of AOCL release.
+
+For latest API information, please refer [AOCL-RNG API Guide](https://docs.amd.com/go/en-US/63864-AOCL-rng)
 
 <hr class="sphinxhide"></hr>
 
